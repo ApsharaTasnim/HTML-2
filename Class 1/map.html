@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Multiply every element of array by 12</p>
+    <p id="productvalue"></p>
+    <script>
+        var array = [23, 45, 2, 6, 75, 9];
+        function myfunc(num) {
+            return num * 12;
+
+        }
+        var newarray = array.map(myfunc)
+        document.getElementById("productvalue").innerHTML = newarray;
+
+    </script>
+</body>
+
+</html>
